@@ -1,0 +1,146 @@
+\problemname{simpleSnake}
+
+
+We are given a grid of size x by x where x is the given input, for example input 2 is 2x2 grid, 4 is 4x4 grid.
+After the grid is assembled, we create the tail at points (0,0) and head at (gridsize,gridsize). You are to remove
+some spaces where the snake can be that is by y amount of spaces. Return the true statement if after the spaces 
+are removed the snake still has a path, otherwise return false. 
+
+
+{\small\begin{verbatim}
+
+25 <-- grid of 5x5
+10 <-- y number of spaces is rounded lower 10 of grid/2
+*****
+*****
+*****
+*****
+*****
+\end{verbatim}}
+
+
+
+\section*{Input}
+The input would be pretty basic where you just type the grid number size like 5 or 10 to do 25 or 100.
+Your code will implement the grids and removed space.
+
+
+\section*{Output}
+If after the spaces are removed there exist a path simply print all the grids and write "Path found!" otherwise
+write NONE FOUND and print grids
+
+\sample{sample}
+25
+10
+*****
+*****
+*****
+*****
+*****
+
+Path found!
+<*  *
+ *** 
+**** 
+ ****
+****>
+
+144
+70
+************
+************
+************
+************
+************
+************
+************
+************
+************
+************
+************
+************
+
+Path found!
+<  * * * * *
+****  * ** *
+ ******* ***
+*  * **  ***
+   ** ******
+   *  *  * *
+ * **** * **
+******  ****
+ *** ****** 
+* **** **   
+ ** *   * * 
+* **  *****>
+
+100
+50
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+
+NONE FOUND
+<****   **
+****     *
+ ** ***** 
+  *  **  *
+ ** **** *
+** ****   
+** * ***  
+*** ** ** 
+*******  *
+*  * *  *>
+
+400
+200
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+
+Path found!
+<* **  ** ** *      
+**   *  ** *  *  ***
+** * *** * ** * * **
+***** * * *** * * * 
+*  ****     ****** *
+*  ** ** ** ** ***  
+*** * **  ********* 
+***  ****   * **   *
+ ** **  ****** *  **
+*  ****** * **   ***
+***     ********  * 
+****  ** *********  
+* * ******  ** ** * 
+  **  * * ** * * ** 
+* * ** * **** ****  
+**   **** **********
+  * *   ****     * *
+   ** * *****     **
+*  ***  **  ***** * 
+** ***   **  *   **>
+
